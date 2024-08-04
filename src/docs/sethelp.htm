@@ -1,0 +1,565 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<link rel=File-List href="sethelp_files/filelist.xml">
+<link rel=Edit-Time-Data href="sethelp_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Xcopy</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>NathanaelJones</o:Author>
+  <o:LastAuthor>Nathanael Jones</o:LastAuthor>
+  <o:Revision>5</o:Revision>
+  <o:TotalTime>9</o:TotalTime>
+  <o:Created>2005-10-12T13:48:00Z</o:Created>
+  <o:LastSaved>2007-01-04T12:59:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>1048</o:Words>
+  <o:Characters>5974</o:Characters>
+  <o:Company>Voice Of God Recordings</o:Company>
+  <o:Lines>49</o:Lines>
+  <o:Paragraphs>14</o:Paragraphs>
+  <o:CharactersWithSpaces>7008</o:CharactersWithSpaces>
+  <o:Version>11.8107</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:1;
+	font-size:24.0pt;
+	font-family:"Times New Roman";
+	font-weight:bold;}
+h2
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:"Times New Roman";
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+pre
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";}
+p.lastincell, li.lastincell, div.lastincell
+	{mso-style-name:lastincell;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.Command, li.Command, div.Command
+	{mso-style-name:Command;
+	mso-style-parent:"";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";
+	color:#FF6600;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2050"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US link=blue vlink=purple style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<h1><a name=EBAA></a>Set<o:p></o:p></h1>
+
+<p>Displays, sets, or removes environment variables. Used without parameters, <b>set</b>
+displays the current environment settings.<o:p></o:p></p>
+
+<h2><a name=E1></a>Syntax<o:p></o:p></h2>
+
+<p><span class=GramE><b>set</b></span><b> </b>[[<b>/a</b> [<i>expression</i>]]
+[<b>/p</b> [<i>variable</i><b>=</b>]] <i>string</i>]<o:p></o:p></p>
+
+<p class=MsoNormal><a
+href="http://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/set.mspx#top"><span
+style='text-decoration:none;text-underline:none'><!--[if gte vml 1]><v:shapetype
+ id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+ path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" alt="Top of page"
+ href="http://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/set.mspx#top"
+ style='width:5.25pt;height:6.75pt' o:button="t">
+ <v:imagedata src="sethelp_files/image001.gif" o:href="http://www.microsoft.com/library/gallery/templates/MNP2.Common/images/arrow_px_up.gif"/>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout'><img
+border=0 width=7 height=9 src="sethelp_files/image001.gif" alt="Top of page"
+v:shapes="_x0000_i1025"></span><![endif]></span></a><a
+href="http://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/set.mspx#top">Top
+of page</a><o:p></o:p></p>
+
+<h2><a name=ERB></a>Parameters<o:p></o:p></h2>
+
+<p><b>/<span class=GramE>a&nbsp;:</span> </b>Sets <i>string</i> to a numerical
+expression that is evaluated. <o:p></o:p></p>
+
+<p><b>/<span class=GramE>p&nbsp;:</span> </b>Sets the value of <i>variable</i>
+to a line of input. <o:p></o:p></p>
+
+<p><span class=GramE><b><i>variable</i>&nbsp;:</b></span><b> </b>Specifies the
+variable you want to set or modify. <o:p></o:p></p>
+
+<p><span class=GramE><b><i>string</i>&nbsp;:</b></span><b> </b>Specifies the
+string you want to associate with the specified variable. <o:p></o:p></p>
+
+<p><b>/?&nbsp;: </b>Displays help at the command prompt. <o:p></o:p></p>
+
+<p class=MsoNormal><a
+href="http://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/set.mspx#top"><span
+style='text-decoration:none;text-underline:none'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1026" type="#_x0000_t75" alt="Top of page"
+ href="http://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/set.mspx#top"
+ style='width:5.25pt;height:6.75pt' o:button="t">
+ <v:imagedata src="sethelp_files/image001.gif" o:href="http://www.microsoft.com/library/gallery/templates/MNP2.Common/images/arrow_px_up.gif"/>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout'><img
+border=0 width=7 height=9 src="sethelp_files/image001.gif" alt="Top of page"
+v:shapes="_x0000_i1026"></span><![endif]></span></a><a
+href="http://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/set.mspx#top">Top
+of page</a><o:p></o:p></p>
+
+<h2><a name=EDD></a>Remarks<o:p></o:p></h2>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='mso-cellspacing:0in;mso-padding-alt:0in 0in 0in 0in'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td valign=top style='padding:0in 0in 0in 0in'>
+  <p class=MsoNormal>•<o:p></o:p></p>
+  </td>
+  <td style='padding:0in 0in 0in 0in'>
+  <p>Using <b>set</b> at the Recovery Console <o:p></o:p></p>
+  <p>The <b>set</b> command, with different parameters, is available from the
+  Recovery Console.<o:p></o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td valign=top style='padding:0in 0in 0in 0in'>
+  <p class=MsoNormal>•<o:p></o:p></p>
+  </td>
+  <td style='padding:0in 0in 0in 0in'>
+  <p>Using special characters <o:p></o:p></p>
+  <p>The characters &lt;, &gt;, |, &amp;, ^ are special command shell
+  characters and must be either preceded by the escape character (^) or
+  enclosed in quotation marks when used in <i>string</i> (that is, <b>&quot;</b><span
+  class=SpellE><i>StringContaining<b>&amp;</b>Symbol</i></span><b>&quot;</b>. If
+  you use quotation marks to enclose a string containing one of the special
+  characters, the quotation marks are set as part of the environment variable
+  value.<o:p></o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td valign=top style='padding:0in 0in 0in 0in'>
+  <p class=MsoNormal>•<o:p></o:p></p>
+  </td>
+  <td style='padding:0in 0in 0in 0in'>
+  <p>Using environment variables <o:p></o:p></p>
+  <p>Use environment variables to control the behavior of some batch files and
+  programs and to control the way Windows&nbsp;XP and the MS-DOS subsystem
+  appears and works. The <b>set </b>command is often used in the <span
+  class=SpellE>Autoexec.nt</span> file to set environment variables.<o:p></o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td valign=top style='padding:0in 0in 0in 0in'>
+  <p class=MsoNormal>•<o:p></o:p></p>
+  </td>
+  <td style='padding:0in 0in 0in 0in'>
+  <p>Displaying the current environment settings <o:p></o:p></p>
+  <p>When you type the <b>set </b>command alone, the current environment
+  settings are displayed. These settings usually include the COMSPEC and PATH
+  environment variables that are used to help find programs on disk. Two other
+  environment variables used by Windows&nbsp;XP are PROMPT and DIRCMD.<o:p></o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td valign=top style='padding:0in 0in 0in 0in'>
+  <p class=MsoNormal>•<o:p></o:p></p>
+  </td>
+  <td style='padding:0in 0in 0in 0in'>
+  <p>Using parameters <o:p></o:p></p>
+  <p>When you specify values for variable and string, the specified variable
+  value is added to the environment and the string is associated with that
+  variable. If the variable already exists in the environment, the new string
+  value replaces the old string value. <o:p></o:p></p>
+  <p>If you specify only a variable and an equal sign (without a string) for
+  the <b>set </b>command, the string value associated with the variable is
+  cleared (as if the variable is not there at all). <o:p></o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5'>
+  <td valign=top style='padding:0in 0in 0in 0in'>
+  <p class=MsoNormal>•<o:p></o:p></p>
+  </td>
+  <td style='padding:0in 0in 0in 0in'>
+  <p>Using <b>/a</b>&nbsp;<o:p></o:p></p>
+  <p>The following table lists the operators supported for <b>/<span
+  class=GramE>a</span></b> in descending order of precedence.<o:p></o:p></p>
+  <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+   style='mso-cellspacing:0in;mso-padding-alt:0in 0in 0in 0in' id=EFF>
+   <thead>
+    <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+     <td valign=top style='padding:0in 0in 0in 0in' id=colEHF>
+     <p class=MsoNormal>Operator<o:p></o:p></p>
+     </td>
+     <td valign=top style='border:none;border-right:solid #CCCCCC 1.0pt;
+     mso-border-right-alt:solid #CCCCCC .75pt;padding:0in 0in 0in 0in'
+     id=colEKF>
+     <p class=MsoNormal>Operation performed<o:p></o:p></p>
+     </td>
+    </tr>
+   </thead>
+   <tr style='mso-yfti-irow:1'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=lastincell>&lt; &gt;<o:p></o:p></p>
+    </td>
+    <td valign=top style='border:none;border-right:solid #CCCCCC 1.0pt;
+    mso-border-right-alt:solid #CCCCCC .75pt;padding:0in 0in 0in 0in'>
+    <p class=lastincell>Grouping<o:p></o:p></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:2'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=lastincell>* / % + -<o:p></o:p></p>
+    </td>
+    <td valign=top style='border:none;border-right:solid #CCCCCC 1.0pt;
+    mso-border-right-alt:solid #CCCCCC .75pt;padding:0in 0in 0in 0in'>
+    <p class=lastincell>Arithmetic<o:p></o:p></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:3'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=lastincell>&lt;&lt; &gt;&gt;<o:p></o:p></p>
+    </td>
+    <td valign=top style='border:none;border-right:solid #CCCCCC 1.0pt;
+    mso-border-right-alt:solid #CCCCCC .75pt;padding:0in 0in 0in 0in'>
+    <p class=lastincell>Logical shift<o:p></o:p></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:4'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=lastincell>&amp;<o:p></o:p></p>
+    </td>
+    <td valign=top style='border:none;border-right:solid #CCCCCC 1.0pt;
+    mso-border-right-alt:solid #CCCCCC .75pt;padding:0in 0in 0in 0in'>
+    <p class=lastincell>Bitwise AND<o:p></o:p></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:5'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=lastincell>^<o:p></o:p></p>
+    </td>
+    <td valign=top style='border:none;border-right:solid #CCCCCC 1.0pt;
+    mso-border-right-alt:solid #CCCCCC .75pt;padding:0in 0in 0in 0in'>
+    <p class=lastincell>Bitwise exclusive OR<o:p></o:p></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:6'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=lastincell>|<o:p></o:p></p>
+    </td>
+    <td valign=top style='border:none;border-right:solid #CCCCCC 1.0pt;
+    mso-border-right-alt:solid #CCCCCC .75pt;padding:0in 0in 0in 0in'>
+    <p class=lastincell>Bitwise OR<o:p></o:p></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:7'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=lastincell>= *= /= %= += -= &amp;= ^= |= &lt;&lt;= &gt;&gt;=<o:p></o:p></p>
+    </td>
+    <td valign=top style='border:none;border-right:solid #CCCCCC 1.0pt;
+    mso-border-right-alt:solid #CCCCCC .75pt;padding:0in 0in 0in 0in'>
+    <p class=lastincell>Assignment<o:p></o:p></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:8;mso-yfti-lastrow:yes'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=lastincell>,<o:p></o:p></p>
+    </td>
+    <td valign=top style='border:none;border-right:solid #CCCCCC 1.0pt;
+    mso-border-right-alt:solid #CCCCCC .75pt;padding:0in 0in 0in 0in'>
+    <p class=lastincell>Expression separator<o:p></o:p></p>
+    </td>
+   </tr>
+  </table>
+  <p>If you use logical (&amp;&amp; ||) or modulus (%) operators, enclose the
+  expression string in quotation marks. Any non-numeric strings in the expression
+  are considered environment variable names whose values are converted to
+  numbers before being processed. If you specify an environment variable name
+  that is not defined in the current environment, a value of zero is allotted,
+  which allows you to do arithmetic with environment variable values without
+  using the % to retrieve a value.<o:p></o:p></p>
+  <p>If you run <b>set /<span class=GramE>a<span style='font-weight:normal'>
+  from</span></span></b> the command line outside of a command script, it
+  displays the final value of the expression.<o:p></o:p></p>
+  <p>Numeric values are decimal numbers unless prefixed by 0× for hexadecimal
+  numbers or 0 for octal numbers. Therefore, 0×12 is the same as 18 is the same
+  as 022. The octal notation can be confusing. For example, 08 and 09 are not
+  valid numbers because 8 and 9 are not valid octal digits.<o:p></o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6'>
+  <td valign=top style='padding:0in 0in 0in 0in'>
+  <p class=MsoNormal>•<o:p></o:p></p>
+  </td>
+  <td style='padding:0in 0in 0in 0in'>
+  <p>Using <b>/p</b>&nbsp;<o:p></o:p></p>
+  <p>You are not required to include a prompt string.<o:p></o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:7'>
+  <td valign=top style='padding:0in 0in 0in 0in'>
+  <p class=MsoNormal>•<o:p></o:p></p>
+  </td>
+  <td style='padding:0in 0in 0in 0in'>
+  <p>Supporting delayed environment variable expansion <o:p></o:p></p>
+  <p>Delayed environment variable expansion support has been added. This
+  support is disabled by default, but you can enable or disable it by using <span
+  class=SpellE><b>cmd</b></span><b> /v</b>. <o:p></o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:8'>
+  <td valign=top style='padding:0in 0in 0in 0in'>
+  <p class=MsoNormal>•<o:p></o:p></p>
+  </td>
+  <td style='padding:0in 0in 0in 0in'>
+  <p>Working with command extensions <o:p></o:p></p>
+  <p>When command extensions are enabled (that is, the default) and you run <b>set</b>
+  alone, it displays all current environment variables. If you run <b>set</b>
+  with a value, it displays the variables that match that value.<o:p></o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:9'>
+  <td valign=top style='padding:0in 0in 0in 0in'>
+  <p class=MsoNormal>•<o:p></o:p></p>
+  </td>
+  <td style='padding:0in 0in 0in 0in'>
+  <p>Using <b>set</b> in batch files <o:p></o:p></p>
+  <p>When creating batch files, you can use <b>set </b>to create variables and
+  use them in the same way that you would the numbered variables <i>%0</i>
+  through <i>%9</i>. You can also use the variables <i>%0</i> through <i>%9</i>
+  as input for <b>set</b>. <o:p></o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:10;mso-yfti-lastrow:yes'>
+  <td valign=top style='padding:0in 0in 0in 0in'>
+  <p class=MsoNormal>•<o:p></o:p></p>
+  </td>
+  <td style='padding:0in 0in 0in 0in'>
+  <p>Calling a <b>set</b> variable from a batch file <o:p></o:p></p>
+  <p>When you call a variable value from a batch file, enclose the value with
+  percent signs (%). For example, if your batch program creates an environment
+  variable named BAUD, you can use the string associated with BAUD as a
+  replaceable parameter by typing <b>%baud%</b> at the command line. <o:p></o:p></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><a
+href="http://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/set.mspx#top"><span
+style='text-decoration:none;text-underline:none'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1027" type="#_x0000_t75" alt="Top of page"
+ href="http://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/set.mspx#top"
+ style='width:5.25pt;height:6.75pt' o:button="t">
+ <v:imagedata src="sethelp_files/image001.gif" o:href="http://www.microsoft.com/library/gallery/templates/MNP2.Common/images/arrow_px_up.gif"/>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout'><img
+border=0 width=7 height=9 src="sethelp_files/image001.gif" alt="Top of page"
+v:shapes="_x0000_i1027"></span><![endif]></span></a><a
+href="http://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/set.mspx#top">Top
+of page</a><o:p></o:p></p>
+
+<h2><a name=E2AAC></a>Examples<o:p></o:p></h2>
+
+<p>To set an environment variable named TEST^1, type:<o:p></o:p></p>
+
+<p><span class=GramE><b>set</b></span><b> <span class=SpellE>testVar</span>=test^^1</b><o:p></o:p></p>
+
+<p>To set an environment variable named TEST&amp;1, type:<o:p></o:p></p>
+
+<p><span class=GramE><b>set</b></span><b> <span class=SpellE>testVar</span>=test^&amp;1</b><o:p></o:p></p>
+
+<p><b>Set</b> sets the variable value as everything following the equals sign
+(=). If you type:<o:p></o:p></p>
+
+<p><span class=GramE><b>set</b></span><b> <span class=SpellE>testVar</span>=&quot;test^1&quot;</b><o:p></o:p></p>
+
+<p>You get the following result: <o:p></o:p></p>
+
+<p><span class=SpellE><span class=GramE>testVar</span></span>=&quot;test^1&quot;<o:p></o:p></p>
+
+<p>To set an environment variable named INCLUDE so that the string C:\Inc (the
+\Inc directory on drive C) is associated with it, type: <o:p></o:p></p>
+
+<p><span class=GramE><b>set</b></span><b> include=c:\inc </b><o:p></o:p></p>
+
+<p>You can then use the string C:\Inc in batch files by enclosing the name <span
+class=GramE>INCLUDE</span> with percent signs (%). For example, you might
+include the following command in a batch file so that you can display the
+contents of the directory associated with the INCLUDE environment variable: <o:p></o:p></p>
+
+<p><span class=GramE><b>dir</b></span><b> %include% </b><o:p></o:p></p>
+
+<p>When this command is processed, the string C:\Inc replaces <b>%include%</b>.
+<o:p></o:p></p>
+
+<p>You can also use <b>set</b> in a batch program that adds a new directory to
+the PATH environment variable. For example:<o:p></o:p></p>
+
+<pre>@echo off <o:p></o:p></pre><pre><span class=SpellE><span class=GramE>rem</span></span> ADDPATH.BAT adds a new directory <o:p></o:p></pre><pre><span
+class=SpellE><span class=GramE>rem</span></span> to the path environment variable. <o:p></o:p></pre><pre><span
+class=GramE>set</span> path=%1;%path% <o:p></o:p></pre><pre><span class=GramE>set</span> <o:p></o:p></pre>
+
+<p>When command extensions are enabled (that is, the default) and you run <b>set</b>
+with a value, it displays the variables that match that value. For example, if
+you type <b>set</b>&nbsp;<b>p</b> at the command prompt, you get the following
+results:<o:p></o:p></p>
+
+<pre>Path=C<span class=GramE>:\</span>WINNT\system32;C:\WINNT;C:\WINNT\System32\Wbem<o:p></o:p></pre><pre>PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH<o:p></o:p></pre><pre>PROCESSOR_ARCHITECTURE=x86<o:p></o:p></pre><pre>PROCESSOR_IDENTIFIER=x86 Family 6 Model 8 Stepping 1, <span
+class=SpellE>GenuineIntel</span><o:p></o:p></pre><pre>PROCESSOR_LEVEL=6<o:p></o:p></pre><pre>PROCESSOR_REVISION=0801<o:p></o:p></pre><pre><span
+class=SpellE>ProgramFiles</span>=C<span class=GramE>:\</span>Program Files<o:p></o:p></pre><pre>PROMPT=$P$G<o:p></o:p></pre>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>

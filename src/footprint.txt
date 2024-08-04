@@ -1,0 +1,34 @@
+This application does not contain .exe or .dll files. This application is is a combination of HTML, javascript, and javascript-generated batch files.
+
+
+This application does not modify the registry in an way, other than registering itself with Add/Remove programs.
+
+All settings are stored in
+C:\Documents and Settings\User\Application Data\SuperCopy\
+
+All logs and temporary files are stored in
+C:\Documents and Settings\User\Local Settings\Temp\
+
+All program files are stored in
+C:\Program Files\SuperCopy\
+
+Shortucts are placed in the start menu.
+
+
+
+
+
+Dependencies:
+
+Microsoft Windows Script Host (Part of IE)
+
+Command line: 
+
+cmd.exe
+mkdir
+rmdir
+del
+xcopy
+echo
+pause
+

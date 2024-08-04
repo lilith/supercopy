@@ -1,0 +1,36 @@
+Changes from version 0.6 to 0.61
+Fixed a rather embarrasing spelling mistake
+
+Changes from version 0.5 to 0.6
+Fixed issue with drives: If more than 12 drives exist, the list would be cut off without a 'more' button. Fixed this.
+Fixed issue with errors: If an error occurs, such as 'invalid destination directory', the action is canceled.
+
+
+Changes from version 0.4 to 0.5
+Changed Error 4 description to be more helpful:
+
+Error 4: Invalid drive name, syntax, or there is not enough memory or disk space! (initialization error) This is sometimes due to filesystem limitations. If you are using two drives, please make sure they both are using the same filesystem. FAT32 does not support files over 4 GB.
+
+
+Added 'can't' to the error message list. This makes "Can't find file:" appear in the summary.
+
+Added pause setting
+
+Added volume names
+Added Drive tooltips.
+Added Destination drive information.
+Added help links.
+
+Changed .hta language from javascript to jscript.
+Fixed backward compatibility issue in batch file loader.
+
+
+Added 'enable browsing' checkboxes
+
+Fixed this bug:
+When copying an entire network share to a new folder, two MKDIR commands are listed. One, because the destination doesn’t exist, and one because the source specification doesn’t end in a \ or *.*.
+Try \\vgrdata\user mp3 to  C:\nonexistentfolder
+
+
+Changes from version 0.31 to 0.35
+- Modified the default icon placement from "current user" to "all users" for the desktop and start menu.

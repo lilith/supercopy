@@ -1,0 +1,453 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:st1="urn:schemas-microsoft-com:office:smarttags"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<link rel=File-List href="delhelp_files/filelist.xml">
+<link rel=Edit-Time-Data href="delhelp_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Rmdir (rd)</title>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="State"/>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="place"/>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>NathanaelJones</o:Author>
+  <o:LastAuthor>Nathanael Jones</o:LastAuthor>
+  <o:Revision>3</o:Revision>
+  <o:TotalTime>0</o:TotalTime>
+  <o:Created>2005-10-12T14:17:00Z</o:Created>
+  <o:LastSaved>2007-02-19T16:41:00Z</o:LastSaved>
+  <o:Pages>2</o:Pages>
+  <o:Words>601</o:Words>
+  <o:Characters>3427</o:Characters>
+  <o:Company>Voice Of God Recordings</o:Company>
+  <o:Lines>28</o:Lines>
+  <o:Paragraphs>8</o:Paragraphs>
+  <o:CharactersWithSpaces>4020</o:CharactersWithSpaces>
+  <o:Version>11.8107</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]--><!--[if !mso]><object
+ classid="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=ieooui></object>
+<style>
+st1\:*{behavior:url(#ieooui) }
+</style>
+<![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:1;
+	font-size:24.0pt;
+	font-family:"Times New Roman";
+	font-weight:bold;}
+h2
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:"Times New Roman";
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.Command, li.Command, div.Command
+	{mso-style-name:Command;
+	mso-style-parent:"";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";
+	color:#FF6600;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+p.lastincell, li.lastincell, div.lastincell
+	{mso-style-name:lastincell;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]-->
+</head>
+
+<body lang=EN-US link=blue vlink=purple style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<h1><st1:State w:st="on"><st1:place w:st="on">Del</st1:place></st1:State>
+(erase)<o:p></o:p></h1>
+
+<p>Deletes specified files.<o:p></o:p></p>
+
+<h2><a name=EW></a>Syntax<o:p></o:p></h2>
+
+<p><st1:State w:st="on"><st1:place w:st="on"><span class=GramE><b>del</b></span></st1:place></st1:State>
+[<i>Drive</i><b>:</b>][<i>Path</i>] <span class=SpellE><i>FileName</i></span> [
+...] [<b>/p</b>] [<b>/f</b>] [<b>/s</b>] [<b>/q</b>] [<b>/a</b>[<b>:</b><i>attributes</i>]]<o:p></o:p></p>
+
+<p><span class=GramE><b>erase</b></span> [<i>Drive</i><b>:</b>][<i>Path</i>] <span
+class=SpellE><i>FileName</i></span> [ ...] [<b>/p</b>] [<b>/f</b>] [<b>/s</b>]
+[<b>/q</b>] [<b>/a</b>[<b>:</b><i>attributes</i>]]<o:p></o:p></p>
+
+<p class=MsoNormal><a
+href="http://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/del.mspx#top"><span
+style='text-decoration:none;text-underline:none'><!--[if gte vml 1]><v:shapetype
+ id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+ path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" alt="Top of page"
+ href="http://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/del.mspx#top"
+ style='width:5.25pt;height:6.75pt' o:button="t">
+ <v:imagedata src="delhelp_files/image001.gif" o:href="http://www.microsoft.com/library/gallery/templates/MNP2.Common/images/arrow_px_up.gif"/>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout'><img
+border=0 width=7 height=9 src="delhelp_files/image001.gif" alt="Top of page"
+v:shapes="_x0000_i1025"></span><![endif]></span></a><a
+href="http://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/del.mspx#top">Top
+of page</a><o:p></o:p></p>
+
+<h2><a name=E5C></a>Parameters<o:p></o:p></h2>
+
+<p><b>[<i>Drive</i>:][<i>Path</i>] <span class=SpellE><span class=GramE><i>FileName</i></span></span><span
+class=GramE>&nbsp;:</span> </b>Specifies the location and name of the file or
+set of files you want to delete. <i>Filename</i> is required. You can use
+multiple file names. Separate file names with spaces, commas, or semicolons. <o:p></o:p></p>
+
+<p><b>/<span class=GramE>p&nbsp;:</span> </b>Prompts you for confirmation
+before deleting the specified file. <o:p></o:p></p>
+
+<p><b>/<span class=GramE>f&nbsp;:</span> </b>Forces deletion of read-only
+files. <o:p></o:p></p>
+
+<p><b>/<span class=GramE>s&nbsp;:</span> </b>Deletes specified files from the
+current directory and all subdirectories. <span class=GramE>Displays the names
+of the files as they are being deleted.</span> <o:p></o:p></p>
+
+<p><b>/<span class=GramE>q&nbsp;:</span> </b>Specifies quiet mode. You are not
+prompted for delete confirmation. <o:p></o:p></p>
+
+<p><b>/<span class=GramE>a&nbsp;:</span> </b>Deletes files based on specified
+attributes. <o:p></o:p></p>
+
+<p><span class=GramE><b><i>attributes</i>&nbsp;:</b></span><b> </b>Specifies
+any of the following file attributes: <o:p></o:p></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='mso-cellspacing:0in;mso-padding-alt:0in 0in 0in 0in' id=EIF>
+ <thead>
+  <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+   <td valign=top style='padding:0in 0in 0in 0in' id=colEKF>
+   <p class=MsoNormal>Attribute<o:p></o:p></p>
+   </td>
+   <td valign=top style='border:none;border-right:solid #CCCCCC 1.0pt;
+   mso-border-right-alt:solid #CCCCCC .75pt;padding:0in 0in 0in 0in' id=colENF>
+   <p class=MsoNormal>Description<o:p></o:p></p>
+   </td>
+  </tr>
+ </thead>
+ <tr style='mso-yfti-irow:1'>
+  <td valign=top style='padding:0in 0in 0in 0in'>
+  <p class=lastincell><b>r</b><o:p></o:p></p>
+  </td>
+  <td valign=top style='border:none;border-right:solid #CCCCCC 1.0pt;
+  mso-border-right-alt:solid #CCCCCC .75pt;padding:0in 0in 0in 0in'>
+  <p class=lastincell>Read-only<o:p></o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td valign=top style='padding:0in 0in 0in 0in'>
+  <p class=lastincell><b>a</b><o:p></o:p></p>
+  </td>
+  <td valign=top style='border:none;border-right:solid #CCCCCC 1.0pt;
+  mso-border-right-alt:solid #CCCCCC .75pt;padding:0in 0in 0in 0in'>
+  <p class=lastincell>Archive<o:p></o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td valign=top style='padding:0in 0in 0in 0in'>
+  <p class=lastincell><b>s</b><o:p></o:p></p>
+  </td>
+  <td valign=top style='border:none;border-right:solid #CCCCCC 1.0pt;
+  mso-border-right-alt:solid #CCCCCC .75pt;padding:0in 0in 0in 0in'>
+  <p class=lastincell>System<o:p></o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td valign=top style='padding:0in 0in 0in 0in'>
+  <p class=lastincell><b>h</b><o:p></o:p></p>
+  </td>
+  <td valign=top style='border:none;border-right:solid #CCCCCC 1.0pt;
+  mso-border-right-alt:solid #CCCCCC .75pt;padding:0in 0in 0in 0in'>
+  <p class=lastincell>Hidden<o:p></o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5;mso-yfti-lastrow:yes'>
+  <td valign=top style='padding:0in 0in 0in 0in'>
+  <p class=lastincell><b>-</b><o:p></o:p></p>
+  </td>
+  <td valign=top style='border:none;border-right:solid #CCCCCC 1.0pt;
+  mso-border-right-alt:solid #CCCCCC .75pt;padding:0in 0in 0in 0in'>
+  <p class=lastincell>Prefix meaning &quot;not&quot;<o:p></o:p></p>
+  </td>
+ </tr>
+</table>
+
+<p><b>/?&nbsp;: </b>Displays help at the command prompt. <o:p></o:p></p>
+
+<p class=MsoNormal><a
+href="http://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/del.mspx#top"><span
+style='text-decoration:none;text-underline:none'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1026" type="#_x0000_t75" alt="Top of page"
+ href="http://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/del.mspx#top"
+ style='width:5.25pt;height:6.75pt' o:button="t">
+ <v:imagedata src="delhelp_files/image001.gif" o:href="http://www.microsoft.com/library/gallery/templates/MNP2.Common/images/arrow_px_up.gif"/>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout'><img
+border=0 width=7 height=9 src="delhelp_files/image001.gif" alt="Top of page"
+v:shapes="_x0000_i1026"></span><![endif]></span></a><a
+href="http://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/del.mspx#top">Top
+of page</a><o:p></o:p></p>
+
+<h2><a name=E4G></a>Remarks<o:p></o:p></h2>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='mso-cellspacing:0in;mso-padding-alt:0in 0in 0in 0in'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td valign=top style='padding:0in 0in 0in 0in'>
+  <p class=MsoNormal>•<o:p></o:p></p>
+  </td>
+  <td style='padding:0in 0in 0in 0in'>
+  <p>Using <b>/p</b>&nbsp;<o:p></o:p></p>
+  <p>If you use <b>/p</b>, <st1:State w:st="on"><st1:place w:st="on"><b>del</b></st1:place></st1:State>
+  displays the name of a file and sends the following message: <o:p></o:p></p>
+  <p><span class=GramE>filename</span>, Delete (Y/N)? <o:p></o:p></p>
+  <p>Press Y to confirm the deletion, N to cancel the deletion and display the next
+  file name (if you specified a group of files), or CTRL+C to stop the <st1:State
+  w:st="on"><st1:place w:st="on"><b>del</b></st1:place></st1:State> command.<o:p></o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td valign=top style='padding:0in 0in 0in 0in'>
+  <p class=MsoNormal>•<o:p></o:p></p>
+  </td>
+  <td style='padding:0in 0in 0in 0in'>
+  <p>Disabling command extensions <o:p></o:p></p>
+  <p>If you disable command extensions, the <b>/s</b> command-line option
+  displays the names of any files that were not found, instead of displaying
+  the names of files that are being deleted (that is, the behavior is
+  reversed). For more information about disabling command extensions, see <span
+  class=SpellE><b>cmd</b></span> in Related Topics.<o:p></o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td valign=top style='padding:0in 0in 0in 0in'>
+  <p class=MsoNormal>•<o:p></o:p></p>
+  </td>
+  <td style='padding:0in 0in 0in 0in'>
+  <p>Deleting more than one file at a time <o:p></o:p></p>
+  <p>You can delete all of the files in a folder by typing <st1:State w:st="on"><st1:place
+   w:st="on"><b>del</b></st1:place></st1:State> followed by [<i>Drive</i><b>:</b><span
+  class=GramE>]<i>Path</i></span>. For example, the following command deletes
+  all files in the \Work folder:<o:p></o:p></p>
+  <p><st1:State w:st="on"><st1:place w:st="on"><b>del</b></st1:place></st1:State><b>
+  \work</b><o:p></o:p></p>
+  <p>You can also use wildcards (that is, * <span class=GramE>and ?</span>) to
+  delete more than one file at a time. However, you should use wildcards
+  cautiously with the <st1:State w:st="on"><st1:place w:st="on"><b>del</b></st1:place></st1:State>
+  command to avoid deleting files unintentionally. For example, if you type the
+  following command: <o:p></o:p></p>
+  <p><st1:State w:st="on"><st1:place w:st="on"><span class=GramE><b>del</b></span></st1:place></st1:State><b>
+  *.* </b><o:p></o:p></p>
+  <p>The <st1:State w:st="on"><st1:place w:st="on"><b>del</b></st1:place></st1:State>
+  command displays the following prompt: <o:p></o:p></p>
+  <p>All files in directory will be deleted! Are you sure (Y/N)? <o:p></o:p></p>
+  <p>Press Y and then ENTER to delete all files in the current folder, or press
+  N and then ENTER to cancel the deletion. <o:p></o:p></p>
+  <p>Before you use wildcards with the <st1:State w:st="on"><st1:place w:st="on"><b>del</b></st1:place></st1:State>
+  command to delete a group of files, you can use the same wildcards with the <b>dir</b>
+  command to see a list of the names of all the files included in the group. <o:p></o:p></p>
+  <p><!--[if gte vml 1]><v:shape id="_x0000_i1027" type="#_x0000_t75" alt=""
+   style='width:7.5pt;height:7.5pt'>
+   <v:imagedata src="delhelp_files/image002.gif" o:href="http://img.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/warning.gif"/>
+  </v:shape><![endif]--><![if !vml]><img border=0 width=10 height=10
+  src="delhelp_files/image002.gif" v:shapes="_x0000_i1027"><![endif]>&nbsp;Warning<o:p></o:p></p>
+  <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+   style='mso-cellspacing:0in;mso-padding-alt:0in 0in 0in 0in'>
+   <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=MsoNormal>•<o:p></o:p></p>
+    </td>
+    <td style='padding:0in 0in 0in 0in'>
+    <p>After you delete a file from your disk using <st1:State w:st="on"><st1:place
+     w:st="on"><b>del</b></st1:place></st1:State>, you cannot retrieve it. <o:p></o:p></p>
+    </td>
+   </tr>
+  </table>
+  <p class=MsoNormal><o:p></o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3;mso-yfti-lastrow:yes'>
+  <td valign=top style='padding:0in 0in 0in 0in'>
+  <p class=MsoNormal>•<o:p></o:p></p>
+  </td>
+  <td style='padding:0in 0in 0in 0in'>
+  <p>The <st1:State w:st="on"><st1:place w:st="on"><b>del</b></st1:place></st1:State>
+  command, with different parameters, is available from the Recovery Console. <o:p></o:p></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><a
+href="http://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/del.mspx#top"><span
+style='text-decoration:none;text-underline:none'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1028" type="#_x0000_t75" alt="Top of page"
+ href="http://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/del.mspx#top"
+ style='width:5.25pt;height:6.75pt' o:button="t">
+ <v:imagedata src="delhelp_files/image001.gif" o:href="http://www.microsoft.com/library/gallery/templates/MNP2.Common/images/arrow_px_up.gif"/>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout'><img
+border=0 width=7 height=9 src="delhelp_files/image001.gif" alt="Top of page"
+v:shapes="_x0000_i1028"></span><![endif]></span></a><a
+href="http://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/del.mspx#top">Top
+of page</a><o:p></o:p></p>
+
+<h2><a name=E2BAC></a>Examples<o:p></o:p></h2>
+
+<p>To delete all the files in a folder named Test on drive C:\, type any of the
+following: <o:p></o:p></p>
+
+<p><st1:State w:st="on"><st1:place w:st="on"><span class=GramE><b>del</b></span></st1:place></st1:State><b>
+c:\test</b><o:p></o:p></p>
+
+<p><st1:State w:st="on"><st1:place w:st="on"><span class=GramE><b>del</b></span></st1:place></st1:State><b>
+c:\test\*.* </b><o:p></o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>

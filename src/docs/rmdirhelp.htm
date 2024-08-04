@@ -1,0 +1,267 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<link rel=File-List href="rmdirhelp_files/filelist.xml">
+<title>Rmdir (rd)</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>NathanaelJones</o:Author>
+  <o:LastAuthor>NathanaelJones</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>0</o:TotalTime>
+  <o:Created>2005-10-12T14:17:00Z</o:Created>
+  <o:LastSaved>2005-10-12T14:52:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>307</o:Words>
+  <o:Characters>1751</o:Characters>
+  <o:Company>Voice Of God Recordings</o:Company>
+  <o:Lines>14</o:Lines>
+  <o:Paragraphs>4</o:Paragraphs>
+  <o:CharactersWithSpaces>2054</o:CharactersWithSpaces>
+  <o:Version>11.6360</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:1;
+	font-size:24.0pt;
+	font-family:"Times New Roman";
+	font-weight:bold;}
+h2
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:"Times New Roman";
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.Command, li.Command, div.Command
+	{mso-style-name:Command;
+	mso-style-parent:"";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";
+	color:#FF6600;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]-->
+</head>
+
+<body lang=EN-US link=blue vlink=purple style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<h1><span class=SpellE>Rmdir</span> (rd)</h1>
+
+<p>Removes (that is, deletes) a directory.</p>
+
+<h2><a name=EFAA></a>Syntax</h2>
+
+<p><span class=SpellE><span class=GramE><b>rmdir</b></span></span><b> </b>[<i>Drive</i><b>:</b>]<i>Path</i>
+[<b>/s</b>] [<b>/q</b>]</p>
+
+<p><span class=GramE><b>rd</b></span><b> </b>[<i>Drive</i><b>:</b>]<i>Path</i>
+[<b>/s</b>] [<b>/q</b>]</p>
+
+<h2><a name=EEAA></a>Parameters</h2>
+
+<p><b>[<i>Drive</i>:]<span class=GramE><i>Path</i>&nbsp;:</span> </b>Specifies
+the location and name of the directory that you want to delete. </p>
+
+<p><b>/<span class=GramE>s&nbsp;:</span> </b>Removes the specified directory and
+all subdirectories including any files. <span class=GramE>Use <b>/s</b> to
+remove a tree.</span> </p>
+
+<p><b>/<span class=GramE>q&nbsp;:</span> </b>Runs <span class=SpellE><b>rmdir</b></span>
+in quiet mode. <span class=GramE>Deletes directories without confirmation.</span>
+</p>
+
+<p><b>/?&nbsp;: </b>Displays help at the command prompt. </p>
+
+<h2><a name=EDAA></a>Remarks</h2>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='mso-cellspacing:0in;mso-padding-alt:0in 0in 0in 0in'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td valign=top style='padding:0in 0in 0in 0in'>
+  <p class=MsoNormal>•</p>
+  </td>
+  <td style='padding:0in 0in 0in 0in'>
+  <p>Using <span class=SpellE><b>rmdir</b></span> at the Recovery Console </p>
+  <p>The <span class=SpellE><b>rmdir</b></span> command, with different
+  parameters, is available from the Recovery Console.</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td valign=top style='padding:0in 0in 0in 0in'>
+  <p class=MsoNormal>•</p>
+  </td>
+  <td style='padding:0in 0in 0in 0in'>
+  <p>Cannot delete directory with hidden or system files </p>
+  <p>You cannot delete a directory that contains files, including hidden or
+  system files. If you attempt to do so, the following message appears: </p>
+  <p>The directory not empty </p>
+  <p>Use the <b>dir</b> command to list hidden and system files, and the <b>attrib</b>
+  command to remove hidden and system attributes from files. For more
+  information, see Related Topics. </p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td valign=top style='padding:0in 0in 0in 0in'>
+  <p class=MsoNormal>•</p>
+  </td>
+  <td style='padding:0in 0in 0in 0in'>
+  <p>Using the backslash character with the path parameter </p>
+  <p>If you insert a backslash (\) before the first directory name in path, the
+  directory is treated as a subdirectory of the root directory, regardless of
+  your current directory. If you do not insert a backslash before the first
+  directory name in path, the directory is treated as a subdirectory of the
+  current directory. </p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3;mso-yfti-lastrow:yes'>
+  <td valign=top style='padding:0in 0in 0in 0in'>
+  <p class=MsoNormal>•</p>
+  </td>
+  <td style='padding:0in 0in 0in 0in'>
+  <p>Deleting the current directory </p>
+  <p>You cannot use <span class=SpellE><b>rmdir</b></span><b> </b>to delete the
+  current directory. You must first change to a different directory (not a subdirectory
+  of the current directory) and then use <span class=SpellE><b>rmdir</b></span><b>
+  </b>with a path. If you attempt to delete the current directory, the
+  following message appears: </p>
+  <p>The process cannot access the file because it is being used by another
+  process.</p>
+  </td>
+ </tr>
+</table>
+
+<h2><a name=ECAA></a>Examples</h2>
+
+<p>To delete a directory named \User\Smith, first ensure that the directory is
+empty. To do this, type: </p>
+
+<p class=Command><span class=GramE>dir</span> \user\smith /a </p>
+
+<p>Only the &quot;.&quot; and &quot;<span class=GramE>..&quot;</span> symbols
+should display. </p>
+
+<p>Then, from any directory except \User\Smith, type: </p>
+
+<p class=Command><span class=SpellE><span class=GramE>rmdir</span></span>
+\user\smith </p>
+
+<p>To delete the directory \User and all of the subdirectories and files, type:</p>
+
+<p class=Command><span class=SpellE><span class=GramE>rmdir</span></span> /s
+\user</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+Features:
+
+Exclusion list still added when unchecked.
+
+Allow changing the default log directory.. also support placing a copy somewhere else
+Allow adding a check to see if the drive the script is running from is a certain letter.
+Fix error handling
+Allow the user to cancel a simulated copy
+Fix the color scheme
+Make the open script box nicer.
+Fix the action descriptions.
+
+Reposition everything so the workflow goes from top to bottom. The copy and generate script buttons should be at the bottom also.
+make exclusion list more prominent
+
+
+Make "Add Line" more indicative of purpose.
+Add a "safe clean copy" with renaming. 
+"Copy to temporary directory, then delete destination folder and rename temporary directory to destination."
+
+Make UI automatically open the advanced tab if something other than the defaults are selected.
+
+Comapre file count... count all files in the source directories, and count all files in the destination directories.

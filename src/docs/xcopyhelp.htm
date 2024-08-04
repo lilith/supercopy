@@ -1,0 +1,614 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<link rel=File-List href="xcopyhelp_files/filelist.xml">
+<title>Xcopy</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>NathanaelJones</o:Author>
+  <o:LastAuthor>NathanaelJones</o:LastAuthor>
+  <o:Revision>4</o:Revision>
+  <o:TotalTime>8</o:TotalTime>
+  <o:Created>2005-10-12T13:48:00Z</o:Created>
+  <o:LastSaved>2005-10-12T19:08:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>1450</o:Words>
+  <o:Characters>8268</o:Characters>
+  <o:Company>Voice Of God Recordings</o:Company>
+  <o:Lines>68</o:Lines>
+  <o:Paragraphs>19</o:Paragraphs>
+  <o:CharactersWithSpaces>9699</o:CharactersWithSpaces>
+  <o:Version>11.6360</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:1;
+	font-size:24.0pt;
+	font-family:"Times New Roman";
+	font-weight:bold;}
+h2
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:"Times New Roman";
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+pre
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";}
+p.lastincell, li.lastincell, div.lastincell
+	{mso-style-name:lastincell;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.Command, li.Command, div.Command
+	{mso-style-name:Command;
+	mso-style-parent:"";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";
+	color:#FF6600;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]-->
+</head>
+
+<body lang=EN-US link=blue vlink=purple style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<h1>Xcopy</h1>
+
+<p>Copies files and directories, including subdirectories.</p>
+
+<h2><a name=EFAA></a>Syntax</h2>
+
+<p><b>xcopy</b>&nbsp;<i>Source</i> [<i>Destination</i>] [<b>/w</b>] [<b>/p</b>]
+[<b>/c</b>] [<b>/v</b>] [<b>/q</b>] [<b>/f</b>] [<b>/l</b>] [<b>/g</b>] [<b>/d</b>[<b>:</b><i>mm-dd-yyyy</i>]]
+[<b>/u</b>] [<b>/i</b>] [<b>/s</b> [<b>/e</b>]] [<b>/t</b>] [<b>/k</b>] [<b>/r</b>]
+[<b>/h</b>] [{<b>/a</b>|<b>/m</b>}] [<b>/n</b>] [<b>/o</b>] [<b>/x</b>] [<b>/exclude:</b><i>file1</i>[<b>+</b>[<i>file2</i>]][<b>+</b>[<i>file3</i>]]
+[{<b>/y</b>|<b>/-y</b>}] [<b>/z</b>]</p>
+
+<p class=MsoNormal><a name=EEAA></a>Parameters</p>
+
+<p style='margin-top:0in;margin-right:0in;margin-bottom:1.0pt;margin-left:0in'><b><i>Source</i>&nbsp;:
+</b>Required. Specifies the location and names of the files you want to copy.
+This parameter must include either a drive or a path. </p>
+
+<p style='margin-top:0in;margin-right:0in;margin-bottom:1.0pt;margin-left:0in'><b><i>Destination</i>&nbsp;:
+</b>Specifies the destination of the files you want to copy. This parameter can
+include a drive letter and colon, a directory name, a file name, or a
+combination of these. </p>
+
+<p style='margin-top:0in;margin-right:0in;margin-bottom:1.0pt;margin-left:0in'><b>/w&nbsp;:
+</b>Displays the following message and waits for your response before starting
+to copy files: </p>
+
+<p style='margin-top:0in;margin-right:0in;margin-bottom:1.0pt;margin-left:0in'>Press
+any key to begin copying file(s) </p>
+
+<p style='margin-top:0in;margin-right:0in;margin-bottom:1.0pt;margin-left:0in'><b>/p&nbsp;:
+</b>Prompts you to confirm whether you want to create each destination file. </p>
+
+<p style='margin-top:0in;margin-right:0in;margin-bottom:1.0pt;margin-left:0in'><b>/c&nbsp;:
+</b>Ignores errors. </p>
+
+<p style='margin-top:0in;margin-right:0in;margin-bottom:1.0pt;margin-left:0in'><b>/v
+: </b>Does nothing. Sector check is built into Windows XP. For compatibility.</p>
+
+<p style='margin-top:0in;margin-right:0in;margin-bottom:1.0pt;margin-left:0in'><b>/q&nbsp;:
+</b>Suppresses the display of <b>xcopy </b>messages. </p>
+
+<p style='margin-top:0in;margin-right:0in;margin-bottom:1.0pt;margin-left:0in'><b>/f&nbsp;:
+</b>Displays source and destination file names while copying. </p>
+
+<p style='margin-top:0in;margin-right:0in;margin-bottom:1.0pt;margin-left:0in'><b>/l&nbsp;:
+</b>Displays a list of files that are to be copied. </p>
+
+<p style='margin-top:0in;margin-right:0in;margin-bottom:1.0pt;margin-left:0in'><b>/g&nbsp;:
+</b>Creates decrypted destination files. </p>
+
+<p style='margin-top:0in;margin-right:0in;margin-bottom:1.0pt;margin-left:0in'><b>/d[:<i>mm-dd-yyyy</i>]
+: </b>Copies source files changed on or after the specified date only. If you
+do not include a <i>mm-dd-yyyy</i> value, <b>xcopy</b> copies all <i>Source</i>
+files that are newer than existing <i>Destination</i> files. This command-line
+option allows you to update files that have changed. </p>
+
+<p style='margin-top:0in;margin-right:0in;margin-bottom:1.0pt;margin-left:0in'><b>/u&nbsp;:
+</b>Copies files from <i>Source</i> that exist on <i>Destination</i> only. </p>
+
+<p style='margin-top:0in;margin-right:0in;margin-bottom:1.0pt;margin-left:0in'><b>/i&nbsp;:
+</b>If <i>Source</i> is a directory or contains wildcards and <i>Destination</i>
+does not exist, <b>xcopy</b> assumes<i> destination</i> specifies a directory
+name and creates a new directory. Then, <b>xcopy</b> copies all specified files
+into the new directory. By default, <b>xcopy</b> prompts you to specify whether
+<i>Destination</i> is a file or a directory. </p>
+
+<p style='margin-top:0in;margin-right:0in;margin-bottom:1.0pt;margin-left:0in'><b>/s&nbsp;:
+</b>Copies directories and subdirectories, unless they are empty. If you omit <b>/s</b>,
+<b>xcopy </b>works within a single directory. </p>
+
+<p style='margin-top:0in;margin-right:0in;margin-bottom:1.0pt;margin-left:0in'><b>/e&nbsp;:
+</b>Copies all subdirectories, even if they are empty. Use <b>/e</b> with the <b>/s</b>
+and <b>/t</b> command-line options. </p>
+
+<p style='margin-top:0in;margin-right:0in;margin-bottom:1.0pt;margin-left:0in'><b>/t&nbsp;:
+</b>Copies the subdirectory structure (that is, the tree) only, not files. To
+copy empty directories, you must include the <b>/e</b> command-line option. </p>
+
+<p style='margin-top:0in;margin-right:0in;margin-bottom:1.0pt;margin-left:0in'><b>/k&nbsp;:
+</b>Copies files and retains the read-only attribute on destination files if
+present on the source files. By default, <b>xcopy</b> removes the read-only
+attribute. </p>
+
+<p style='margin-top:0in;margin-right:0in;margin-bottom:1.0pt;margin-left:0in'><b>/r&nbsp;:
+</b>Copies read-only files. </p>
+
+<p style='margin-top:0in;margin-right:0in;margin-bottom:1.0pt;margin-left:0in'><b>/h&nbsp;:
+</b>Copies files with hidden and system file attributes. By default, <b>xcopy</b>
+does not copy hidden or system files. </p>
+
+<p style='margin-top:0in;margin-right:0in;margin-bottom:1.0pt;margin-left:0in'><b>/a&nbsp;:
+</b>Copies only source files that have their archive file attributes set. <b>/a</b>
+does not modify the archive file attribute of the source file. For information
+about how to set the archive file attribute by using <b>attrib</b>, see Related
+Topics. </p>
+
+<p style='margin-top:0in;margin-right:0in;margin-bottom:1.0pt;margin-left:0in'><b>/m&nbsp;:
+</b>Copies source files that have their archive file attributes set. Unlike <b>/a</b>,
+<b>/m</b> turns off archive file attributes in the files that are specified in
+the source. For information about how to set the archive file attribute by
+using <b>attrib</b>, see Related Topics. </p>
+
+<p style='margin-top:0in;margin-right:0in;margin-bottom:1.0pt;margin-left:0in'><b>/n&nbsp;:
+</b>Creates copies by using the NTFS short file or directory names. <b>/n</b>
+is required when you copy files or directories from an NTFS volume to a FAT
+volume or when the FAT file system naming convention (that is, 8.3 characters)
+is required on the destination file system. The destination file system can be
+FAT or NTFS. </p>
+
+<p style='margin-top:0in;margin-right:0in;margin-bottom:1.0pt;margin-left:0in'><b>/o&nbsp;:
+</b>Copies file ownership and discretionary access control list (DACL)
+information. </p>
+
+<p style='margin-top:0in;margin-right:0in;margin-bottom:1.0pt;margin-left:0in'><b>/x&nbsp;:
+</b>Copies file audit settings and system access control list (SACL)
+information (implies <b>/o</b>). </p>
+
+<p style='margin-top:0in;margin-right:0in;margin-bottom:1.0pt;margin-left:0in'><b>/exclude:<i>filename1</i>[+[<i>filename2</i>]][+[<i>filename3</i>]]&nbsp;:
+</b>Specifies a list of files containing strings. </p>
+
+<p style='margin-top:0in;margin-right:0in;margin-bottom:1.0pt;margin-left:0in'><b>/y&nbsp;:
+</b>Suppresses prompting to confirm that you want to overwrite an existing
+destination file. </p>
+
+<p style='margin-top:0in;margin-right:0in;margin-bottom:1.0pt;margin-left:0in'><b>/-y&nbsp;:
+</b>Prompts to confirm that you want to overwrite an existing destination file.
+</p>
+
+<p style='margin-top:0in;margin-right:0in;margin-bottom:1.0pt;margin-left:0in'><b>/z&nbsp;:
+</b>Copies over a network in restartable mode. </p>
+
+<p style='margin-top:0in;margin-right:0in;margin-bottom:1.0pt;margin-left:0in'><b>/?&nbsp;:
+</b>Displays help at the command prompt. </p>
+
+<h2><a name=EDAA></a>Remarks</h2>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='mso-cellspacing:0in;mso-padding-alt:0in 0in 0in 0in'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td valign=top style='padding:0in 0in 0in 0in'>
+  <p class=MsoNormal>•</p>
+  </td>
+  <td style='padding:0in 0in 0in 0in'>
+  <p>Using <b>/v</b>&nbsp;</p>
+  <p>Windows&nbsp;XP does not use this command. It is accepted only for
+  compatibility with MS-DOS files.</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td valign=top style='padding:0in 0in 0in 0in'>
+  <p class=MsoNormal>•</p>
+  </td>
+  <td style='padding:0in 0in 0in 0in'>
+  <p>Using <b>/exclude</b>&nbsp;</p>
+  <p>List each string in a separate line in each file. If any of the listed
+  strings match any part of the absolute path of the file to be copied, that
+  file is then excluded from the copying process. For example, if you specify
+  the string &quot;\Obj\&quot;, you exclude all files underneath the Obj
+  directory. If you specify the string &quot;.obj&quot;, you exclude all files
+  with the .obj extension.</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td valign=top style='padding:0in 0in 0in 0in'>
+  <p class=MsoNormal>•</p>
+  </td>
+  <td style='padding:0in 0in 0in 0in'>
+  <p>Using <b>/z</b>&nbsp;</p>
+  <p>If you lose your connection during the copy phase (for example, if the
+  server going offline severs the connection), it resumes after you reestablish
+  the connection. <b>/z</b> also displays the percentage of the copy operation
+  completed for each file.</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td valign=top style='padding:0in 0in 0in 0in'>
+  <p class=MsoNormal>•</p>
+  </td>
+  <td style='padding:0in 0in 0in 0in'>
+  <p>Using <b>/y</b> in the COPYCMD environment variable </p>
+  <p>You can use <b>/y</b> in the COPYCMD environment variable. You can override
+  this command by using <b>/-y</b> on the command line. By default, you are
+  prompted to overwrite, unless you run <b>copy</b> from within a batch script.</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td valign=top style='padding:0in 0in 0in 0in'>
+  <p class=MsoNormal>•</p>
+  </td>
+  <td style='padding:0in 0in 0in 0in'>
+  <p>Copying encrypted files </p>
+  <p>Copying encrypted files to a volume that does not support EFS results in an
+  error. Decrypt the files first or copy the files to a volume that does
+  support EFS.</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5'>
+  <td valign=top style='padding:0in 0in 0in 0in'>
+  <p class=MsoNormal>•</p>
+  </td>
+  <td style='padding:0in 0in 0in 0in'>
+  <p>Appending files </p>
+  <p>To append files, specify a single file for destination, but multiple files
+  for source (that is, by using wildcards or file1+file2+file3 format).</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6'>
+  <td valign=top style='padding:0in 0in 0in 0in'>
+  <p class=MsoNormal>•</p>
+  </td>
+  <td style='padding:0in 0in 0in 0in'>
+  <p>Default value for <i>Destination</i>&nbsp;</p>
+  <p>If you omit <i>Destination</i>, the <b>xcopy </b>command copies the files
+  to the current directory. </p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:7'>
+  <td valign=top style='padding:0in 0in 0in 0in'>
+  <p class=MsoNormal>•</p>
+  </td>
+  <td style='padding:0in 0in 0in 0in'>
+  <p>Specifying whether <i>Destination</i> is a file or directory </p>
+  <p>If <i>Destination</i> does not contain an existing directory and does not end
+  with a backslash (\), the following message appears: </p>
+  <pre>Does destination specify a file name </pre><pre>or directory name on the target </pre><pre>(F = file, D = directory)? </pre>
+  <p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'>Press
+  F if you want the file or files to be copied to a file. Press D if you want
+  the file or files to be copied to a directory. </p>
+  <p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'>You
+  can suppress this message by using the <b>/i</b> command-line option, which
+  causes <b>xcopy</b> to assume that the destination is a directory if the
+  source is more than one file or a directory.</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:8'>
+  <td valign=top style='padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'>•</p>
+  </td>
+  <td style='padding:0in 0in 0in 0in'>
+  <p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'>Using
+  the <b>xcopy</b> command to set archive attribute for <i>Destination</i>
+  files </p>
+  <p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'>The
+  <b>xcopy</b> command creates files with the archive attribute set, whether or
+  not this attribute was set in the source file. For more information about
+  file attributes and <b>attrib</b>, see Related Topics.</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:9'>
+  <td valign=top style='padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'>•</p>
+  </td>
+  <td style='padding:0in 0in 0in 0in'>
+  <p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'>Comparing
+  <b>xcopy</b> and <b>diskcopy</b>&nbsp;</p>
+  <p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'>If
+  you have a disk that contains files in subdirectories and you want to copy it
+  to a disk that has a different format, use the <b>xcopy </b>command instead
+  of <b>diskcopy</b>. Because the <b>diskcopy</b> command copies disks track by
+  track, your source and destination disks must have the same format. The <b>xcopy</b>
+  command does not have this requirement. Use <b>xcopy</b> unless you need a
+  complete disk image copy.</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:10;mso-yfti-lastrow:yes'>
+  <td valign=top style='padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'>•</p>
+  </td>
+  <td style='padding:0in 0in 0in 0in'>
+  <p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'>Exit
+  codes for <b>xcopy</b>&nbsp;</p>
+  <p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'>To
+  process exit codes returned by <b>xcopy</b>, use the <i>errorlevel</i> parameter
+  on the <b>if</b> command line in a batch program. For an example of a batch
+  program that processes exit codes using <b>if</b>, see Related Topics. The
+  following table lists each exit code and a description.<o:p></o:p></p>
+  <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+   style='mso-cellspacing:0in;mso-padding-alt:0in 0in 0in 0in' id=EAAADAA>
+   <thead>
+    <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+     <td valign=top style='padding:0in 0in 0in 0in' id=colEBBAAADAA>
+     <p class=MsoNormal>Exit code<o:p></o:p></p>
+     </td>
+     <td valign=top style='border:none;border-right:solid #CCCCCC 1.0pt;
+     mso-border-right-alt:solid #CCCCCC .75pt;padding:0in 0in 0in 0in'
+     id=colEABAAADAA>
+     <p class=MsoNormal>Description</p>
+     </td>
+    </tr>
+   </thead>
+   <tr style='mso-yfti-irow:1'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=lastincell>0</p>
+    </td>
+    <td valign=top style='border:none;border-right:solid #CCCCCC 1.0pt;
+    mso-border-right-alt:solid #CCCCCC .75pt;padding:0in 0in 0in 0in'>
+    <p class=lastincell>Files were copied without error.</p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:2'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=lastincell>1</p>
+    </td>
+    <td valign=top style='border:none;border-right:solid #CCCCCC 1.0pt;
+    mso-border-right-alt:solid #CCCCCC .75pt;padding:0in 0in 0in 0in'>
+    <p class=lastincell>No files were found to copy.</p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:3'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=lastincell>2</p>
+    </td>
+    <td valign=top style='border:none;border-right:solid #CCCCCC 1.0pt;
+    mso-border-right-alt:solid #CCCCCC .75pt;padding:0in 0in 0in 0in'>
+    <p class=lastincell>The user pressed CTRL+C to terminate <b>xcopy</b>.</p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:4'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=lastincell>4</p>
+    </td>
+    <td valign=top style='border:none;border-right:solid #CCCCCC 1.0pt;
+    mso-border-right-alt:solid #CCCCCC .75pt;padding:0in 0in 0in 0in'>
+    <p class=lastincell>Initialization error occurred. There is not enough
+    memory or disk space, or you entered an invalid drive name or invalid
+    syntax on the command line.</p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:5;mso-yfti-lastrow:yes'>
+    <td valign=top style='padding:0in 0in 0in 0in'>
+    <p class=lastincell>5</p>
+    </td>
+    <td valign=top style='border:none;border-right:solid #CCCCCC 1.0pt;
+    mso-border-right-alt:solid #CCCCCC .75pt;padding:0in 0in 0in 0in'>
+    <p class=lastincell>Disk write error occurred.</p>
+    </td>
+   </tr>
+  </table>
+  <p class=MsoNormal style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><o:p></o:p></p>
+  </td>
+ </tr>
+</table>
+
+<h2><a name=ECAA></a>Examples</h2>
+
+<p>To copy all the files and subdirectories (including any empty
+subdirectories) from drive A to drive B, type: </p>
+
+<p class=Command>xcopy a: b: /s /e </p>
+
+<p>To include any system or hidden files in the previous example, add the<b>/h</b>
+command-line option as follows:</p>
+
+<p class=Command>xcopy a: b: /s /e /h</p>
+
+<p>To update files in the \Reports directory with the files in the \Rawdata
+directory that have changed since December 29, 1993, type: </p>
+
+<p class=Command>xcopy \rawdata \reports /d:12-29-1993&nbsp;</p>
+
+<p>To update all the files that exist in \Reports in the previous example,
+regardless of date, type:</p>
+
+<p class=Command>xcopy \rawdata \reports /u</p>
+
+<p>To obtain a list of the files to be copied by the previous command (that is,
+without actually copying the files), type:</p>
+
+<p class=Command>xcopy \rawdata \reports /d:12-29-1993 /l &gt; xcopy.out</p>
+
+<p>The file Xcopy.out lists every file that is to be copied.</p>
+
+<p>To copy the \Customer directory and all subdirectories to the directory
+\\Public\Address on network drive H:, retain the read-only attribute, and be
+prompted when a new file is created on H:, type:</p>
+
+<p class=Command>xcopy \customer h:\public\address /s /e /k /p</p>
+
+<p>To issue the previous command, ensure that <b>xcopy</b> creates the \Address
+directory if it does not exist, and suppress the message that appears when you
+create a new directory, add the <b>/i</b> command-line option as follows:</p>
+
+<p class=Command>xcopy \customer h:\public\address /s /e /k /p /i</p>
+
+<p>You can create a batch program to perform <b>xcopy</b> operations and use
+the batch <b>if</b> command to process the exit code if an error occurs. For
+example, the following batch program uses replaceable parameters for the <b>xcopy</b>
+source and destination parameters: </p>
+
+<p class=Command>@echo off </p>
+
+<p class=Command>rem COPYIT.BAT transfers all files in all subdirectories of</p>
+
+<p class=Command>rem the source drive or directory (%1) to the destination rem
+drive or directory (%2) </p>
+
+<p class=Command><o:p>&nbsp;</o:p></p>
+
+<p class=Command>xcopy %1 %2 /s /e </p>
+
+<p class=Command><o:p>&nbsp;</o:p></p>
+
+<p class=Command>if errorlevel 4 goto lowmemory </p>
+
+<p class=Command>if errorlevel 2 goto abort </p>
+
+<p class=Command>if errorlevel 0 goto exit </p>
+
+<p class=Command><o:p>&nbsp;</o:p></p>
+
+<p class=Command>:lowmemory </p>
+
+<p class=Command>echo Insufficient memory to copy files or </p>
+
+<p class=Command>echo invalid drive or command-line syntax. </p>
+
+<p class=Command>goto exit </p>
+
+<p class=Command><o:p>&nbsp;</o:p></p>
+
+<p class=Command>:abort </p>
+
+<p class=Command>echo You pressed CTRL+C to end the copy operation. </p>
+
+<p class=Command>goto exit </p>
+
+<p class=Command><o:p>&nbsp;</o:p></p>
+
+<p class=Command>:exit </p>
+
+<p>To use this batch program to copy all files in the C:\Prgmcode directory and
+its subdirectories to drive B, type: </p>
+
+<p class=Command>copyit c:\prgmcode b:&nbsp;</p>
+
+<p>The command interpreter substitutes C:\Prgmcode for <b>%1</b> and B: for <b>%2</b>,
+then uses <b>xcopy</b> with the <b>/e</b> and <b>/s</b> command-line options.
+If <b>xcopy </b>encounters an error, the batch program reads the exit code and
+goes to the label indicated in the appropriate <b>IF ERRORLEVEL</b> statement,
+then displays the appropriate message and exits from the batch program.</p>
+
+<p class=MsoNormal><a name=EBAA></a><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>

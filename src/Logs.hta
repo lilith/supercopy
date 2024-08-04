@@ -1,0 +1,97 @@
+
+<html>
+<head>
+
+<title>Transfer Log Viewer</title>
+
+<hta:application ID="objCopier" APPLICATIONNAME="SuperCopyTransferLog" SCROLL="auto" SINGLEINSTANCE="no" WINDOWSTATE="normal"
+		border="thick" innerborder=no icon="images\Logs.ico" scrollflat="yes">
+		
+		<script language="JavaScript" src="Core.js"></script>
+		<script language="JavaScript" src="OutputFormatting.js"></script>
+		
+
+<script id="clientEventHandlersJS" language="javascript">
+
+
+
+var LoadedLogs = null;
+
+function LoadLog(longfilename){
+	
+	var fso = new ActiveXObject("Scripting.FileSystemObject");
+	var sh = new ActiveXObject("WScript.Shell");
+	
+	var decodestr = DecodeString(longfilename);
+	var filename = decodestr;
+
+	if (fso.FileExists(filename)){
+	    var shortfilename;
+	    shortfilename =fso.GetFile(filename).Name;
+		var summary = "";	
+		if (LoadedLogs.Exists(shortfilename)){
+			summary = LoadedLogs.Item(shortfilename);
+		}else{
+			summary = FormatOutput(filename, fso.GetSpecialFolder(2) + "\\" + shortfilename + ".htm");
+			LoadedLogs.Add(shortfilename,summary);
+		}
+		lblXCopy.innerHTML = summary;
+	}else{
+		lblXCopy.innerHTML = "";
+	}
+	
+}
+
+
+
+function window_onload() {
+	//Load in Source & Dest information
+	var fso = new ActiveXObject("Scripting.FileSystemObject");
+	var sh = new ActiveXObject("WScript.Shell");
+	var pf = sh.ExpandEnvironmentStrings("%PROGRAMFILES%");
+	var list = "";
+	var folder;
+	
+	folder = fso.GetFolder(sh.ExpandEnvironmentStrings("%USERPROFILE%") + "\\Desktop");
+	fc = new Enumerator(folder.files);
+	for (; !fc.atEnd(); fc.moveNext()){
+	    var name = fc.item().Path;
+	    name = name.substring(name.length - 13,name.length);
+	    if (name.toUpperCase()=="SUPERCOPY.LOG"){
+		    var filename = EncodeString(fc.item().Path);
+		    var shortfilename = EncodeString(fc.item().Name);
+		    var row = "<SPAN class=\"log\" language=\"javascript\" onclick=\"LoadLog('"+ filename + "');\">" + shortfilename + "</SPAN>";
+		    list = row + list;
+		}
+	}
+
+	folder = fso.GetFolder(fso.GetSpecialFolder(2));
+	fc = new Enumerator(folder.files);
+	for (; !fc.atEnd(); fc.moveNext()){
+		if (fc.item().Path.substring(fc.item().Path.length - 13, fc.item().Path.length).toUpperCase()=="SUPERCOPY.LOG"){
+			var filename = EncodeString(fc.item().Path);
+			var shortfilename = EncodeString(fc.item().Name);
+			var row = "<SPAN class=\"log\" language=\"javascript\" onclick=\"LoadLog('"+ filename + "');\">" + shortfilename + "</SPAN>";
+			list = row + list;
+		}
+	}
+	
+	lblList.innerHTML = list;
+	 
+	LoadedLogs = new ActiveXObject("Scripting.Dictionary");
+
+}
+
+		</script>
+
+		</head>
+		<body language="javascript" onload="return window_onload()">
+			<link href="UI.css" type=text/css rel=STYLESHEET>
+			<p>Please note that logs are only created when the logging option is checked in SuperCopy. Ouput from XCOPY cannot appear on-screen and be logged at the same time. It must be one or the other. </p>
+			<h1>Recent logs</h1>
+			<DIV id="lblList" language="javascript" style="default" height="100" width = "100"></DIV>
+			<h1>Summary view</h1>
+			<DIV id="lblXCopy" language="javascript" style="default">Please select a log.</DIV>
+
+		</body>
+</html>

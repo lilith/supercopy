@@ -1,0 +1,287 @@
+body{
+
+padding-left:2em;
+padding-right:2em;
+font-family:Veranda;
+}
+div.noBrowse
+{
+	padding:1.4em;
+	text-align:center;
+	font-family:Georgia;
+	font-size:large;
+	font-style:italic;
+	color:Gray;
+	cursor:pointer;
+}
+div.browsersection
+{
+	border-top:3px solid #fafafa;
+	padding-top:6px;
+	margin-top:12px;
+}
+
+h1{color:#3b60a7;font-size:x-large; margin-bottom:.3em; margin-top:1em; border-bottom:1px solid #F4F4F4;}
+
+
+/* Style the buttons in the menu bar: Open, Save, Test, and Run */
+div.menubutton{
+	cursor:hand;
+	height:48px;
+	padding-left:54px;
+	text-decoration:underline;
+	line-height:30px;
+	color:#0000ff;
+}
+
+/* Add icons next to each menu item */
+#btnCopy{background: url(images\copy.gif) top left no-repeat;}
+#btnTest{background: url(images\test.gif) top left no-repeat;}
+#btnOpen{background: url(images\open.gif) top left no-repeat;}
+#btnSave{background: url(images\save.gif) top left no-repeat;}
+
+/* Footer style (includes support, website links*/
+div#footer{
+	border-top:1px solid #F0F0F0;
+	margin-top:3em;
+	
+	padding-top:1em;
+	color:gray;
+}
+
+/*Applied to the file boxes */
+.filelist{
+border: 1px solid #A0A0A0;
+}
+
+/* Affects the from list and the exclusion list */
+textarea{font-weight:bold; }
+/* Affects the destination folder text box */
+input.filelist{font-weight:bold;}
+
+/* Style the link placed in the command listing area that initiates the simulation process */
+a.calculateresults{ padding-left:3em; text-decoration:underline; color:blue; cursor:hand; font-style:italic;}
+
+/* Error messages that appear at the top of the screen. */
+div.errorlink{text-decoration:underline; color:red; cursor:hand; margin-top:1em; margin-bottom:1em;}
+div.errorlinkdel{text-decoration:underline; color:red;cursor:hand;margin-top:1em; margin-bottom:1em;}
+
+
+/* Action Summary */
+#lblSummary{font-family: Verdana; font-style:italic; font-size:9pt; color:#303030;}
+
+p{margin-top: 0px; margin-bottom: 4px;}	
+
+
+	
+p.command, p.result, p.error
+{
+	margin-left:0px;
+	font-family:Arial;
+	font-size:x-small;
+	line-height:1.1em;
+	padding-top:.1em;
+	padding-bottom:.1em;
+}
+p.command
+{
+	Color:Blue;
+	font-weight:bold;
+}
+	
+span.help{ text-decoration: underline; cursor:hand;  padding-left: 30px}
+
+p.result
+{
+	background-color:Yellow;
+	color:Blue;
+	padding-top:.5em;
+	padding-bottom:.5em;
+}
+	
+p.error
+{
+	background-color:Red;
+	color:Black;
+	padding-top:.5em;
+	padding-bottom:.5em;
+}
+
+p.output{    margin-top: 0px; margin-bottom: 0px; font-family: Arial; background-color: Transparent;
+	font-size: small; color:Black;}
+
+/* Lists error/result/command quantities */
+p.infoline{margin-top: 3px; margin-bottom:6px; font-family: Arial; background-color:Transparent;
+			font-size:small; font-weight:bold;}
+		
+
+span.advbtn{margin-top: 0px; margin-bottom: 0px; font-family: Lucidia Console; background-color:Transparent;
+	font-size:x-small; text-decoration: underline; cursor:hand; color: blue; margin-left:18px;}
+
+div.commandbutton{ margin-top: 8px; margin-bottom: 8px; font-family: Tahoma;   background-color:Transparent;
+	font-size:small; border-style:solid; border-width:1px; cursor:hand; color: Black; padding-right:3px;
+	 padding-left:3px; padding-top:3px; padding-bottom:3px; text-align:center;}
+
+div.pathcommandbutton{ margin-top: 0px; margin-bottom: 0px; font-family: Tahoma;   background-color:Transparent;
+	font-size:x-small; border-style:solid; border-width:1px; cursor:hand; color: Black; padding-right:3px;
+	 padding-left:3px; padding-top:1px; padding-bottom:1px; text-align:center;}
+	 
+span.wrapfix{margin-top: 0px; margin-bottom: 0px; font-family: Arial; background-color:Transparent;
+	font-size:xx-small;  cursor:auto; margin-left: 0px;margin-left: 0px; }
+
+			
+p.default{margin-top: 0px; margin-bottom: 0px; font-family: Tahoma; background-color:Transparent;
+			font-size:small; font-weight:bold; color: Red;}
+			
+td.setting{margin-top: 0px; margin-bottom: 0px; font-family: Lucidia Console; background-color:Transparent;
+	font-size:small;  color: Black;}
+	
+table.default{font-family: Arial}
+
+#Settings
+{
+	margin-left:-8px;
+}
+
+/* Link to log */
+span.log{margin-top: 1px; margin-bottom: 1px; font-family: Courier New; background-color:Transparent;
+	font-size:x-small; text-decoration: underline; cursor:hand; color: Blue;margin-right: 8px }
+		
+
+
+
+span { margin-top: 0px; margin-bottom: 0px; font-family:Arial; background-color:Transparent;
+	font-size:x-small;}
+	
+/*Browsing*/
+/* Browse boxes */
+#frominfo{line-height:2em; padding-left:0.7em;}
+#ToInfo{line-height:2em; padding-left:0.7em;}
+
+/* Buttons below the From browser */
+div.addlinebutton{background:url(images\add.gif) center left no-repeat; padding-left:21px; border-bottom:1px solid #E8E8E8; cursor:hand; margin-right:2em;}
+div.removelinesbutton{background:url(images\delete.gif) center left no-repeat; padding-left:21px; border-bottom:1px solid #E8E8E8; cursor:hand;}
+
+
+span.PathInfoUp{margin-top: 1px; margin-bottom: 1px; font-family: Arial; background-color:Transparent;
+	font-size:x-small; text-decoration: underline; cursor:hand; font-weight:bold; color: blue; }
+	
+span.PathInfoName{margin-top: 1px; margin-bottom: 1px; font-family: Arial; background-color:Transparent;
+	font-size:x-small; font-weight:bold; color: Black; }
+	
+span.PathInfoBad{margin-top: 1px; margin-bottom: 1px; font-family: Arial; background-color:Transparent;
+	font-size:x-small; color: Red;  margin-right: 40px}
+	
+span.PathInfoSuggest{margin-top: 1px; margin-bottom: 1px; font-family: Arial; background-color:Transparent;
+	font-size:x-small; text-decoration: underline; cursor:hand; color: Lime;  margin-right: 50px}
+	
+span.DeleteItem{margin-top: 0px; margin-bottom: 0px; background-color:Transparent;
+	 cursor:hand;border-bottom:1px solid #E8E8E8;  color: Black;  margin-left: 2em; padding-left:21px; background:url(images\delete.gif) center left no-repeat;}
+
+span.removabledrive, span.localdrive, span.opticaldrive, span.networkdrive, span.dirlisting, span.listing
+{
+	border-bottom: 1px solid #E8E8E8;  
+	color: #3b60a7; 
+	cursor:pointer; 
+	margin-right: 30px; 
+	padding-left:21px; 
+	padding-bottom:1px; 
+	line-height:1.6em;
+	display:inline-block;
+	white-space:nowrap;
+}
+
+span.listing
+{
+	margin-top: 0px; 
+	margin-bottom: 0px; 
+	margin-right: 8px; 
+	padding-bottom:0px; 
+	display:inline;
+	white-space:normal;
+}
+
+
+span.dirlisting
+{
+	margin-right: 8px; 
+	background: url(images\folder.gif) bottom left no-repeat; 
+}
+span.removabledrive
+{
+	background: url(images\removabledrive.gif) center left no-repeat; 
+}
+span.localdrive
+{
+	background: url(images\localdrive.gif) center left no-repeat; 
+}
+span.opticaldrive
+{
+	background: url(images\opticaldrive.gif) center left no-repeat; 
+}
+span.networkdrive
+{
+	background: url(images\networkdrive.gif) center left no-repeat; 
+}
+
+/* Trace pane section */	
+
+#chkTrace
+{
+	margin-left:1em;
+}
+#tracepanelist ul
+{
+	border-left:10px dotted red;
+	margin-left:0px;
+	padding-left:4em;
+	list-style-type:none;
+}
+
+
+#tracepanelist ul.parent
+{
+	border-left:1px solid gray;	
+	border-bottom:1px solid gray;	
+	list-style-type:none;
+	padding-top:9px;
+	margin-top:-9px;
+	margin-left:7.5px;
+	padding-left:40px;
+	padding-bottom:.7em;
+	margin-bottom:2em;
+}
+#tracepanelist li.parent
+{
+	 background:url(images/add.gif) top left no-repeat;
+	 margin-top:1em;
+	 padding-left:30px;
+	 border-bottom:1px solid #e5e5e5;
+	 padding-bottom:5px;
+	 margin-bottom:0px;
+}
+#tracepanelist li
+{
+	margin-bottom:.2em;
+	margin-top:.2em;
+	padding-left:1em;
+	background-color:#fffafa;
+}
+span.tracedate
+{
+	float:right;
+	font-family:Georgia;
+	font-size:.8em;
+}
+span.traceid
+{
+	font-family:Georgia;
+	font-size:.8em;
+	padding-right:10px;
+	color:Gray;
+}
+span.tracetime
+{
+	padding-right:4em;
+	color:Gray;
+}

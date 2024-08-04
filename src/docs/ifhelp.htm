@@ -1,0 +1,484 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:st1="urn:schemas-microsoft-com:office:smarttags"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<link rel=File-List href="ifhelp_files/filelist.xml">
+<link rel=Edit-Time-Data href="ifhelp_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Xcopy</title>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="place"/>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="State"/>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>NathanaelJones</o:Author>
+  <o:LastAuthor>Nathanael Jones</o:LastAuthor>
+  <o:Revision>5</o:Revision>
+  <o:TotalTime>8</o:TotalTime>
+  <o:Created>2005-10-12T13:48:00Z</o:Created>
+  <o:LastSaved>2007-01-04T13:00:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>942</o:Words>
+  <o:Characters>5374</o:Characters>
+  <o:Company>Voice Of God Recordings</o:Company>
+  <o:Lines>44</o:Lines>
+  <o:Paragraphs>12</o:Paragraphs>
+  <o:CharactersWithSpaces>6304</o:CharactersWithSpaces>
+  <o:Version>11.8107</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]--><!--[if !mso]><object
+ classid="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=ieooui></object>
+<style>
+st1\:*{behavior:url(#ieooui) }
+</style>
+<![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:1;
+	font-size:24.0pt;
+	font-family:"Times New Roman";
+	font-weight:bold;}
+h2
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:"Times New Roman";
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+pre
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";}
+p.lastincell, li.lastincell, div.lastincell
+	{mso-style-name:lastincell;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.Command, li.Command, div.Command
+	{mso-style-name:Command;
+	mso-style-parent:"";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";
+	color:#FF6600;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2050"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US link=blue vlink=purple style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<h1><a name=EBAA></a>If<o:p></o:p></h1>
+
+<p>Performs conditional processing in batch programs. <o:p></o:p></p>
+
+<h2><a name=EW></a>Syntax<o:p></o:p></h2>
+
+<p><b>if</b> [<b>not</b>] <b>errorlevel</b>&nbsp;<i>number</i>&nbsp;<i>command</i>
+[<b>else</b>&nbsp;<i>expression</i>]<o:p></o:p></p>
+
+<p><b>if</b> [<b>not</b>] <i>string1</i><b>==</b><i>string2</i>&nbsp;<i>command</i>
+[<b>else</b>&nbsp;<i>expression</i>]<o:p></o:p></p>
+
+<p><b>if</b> [<b>not</b>] <b>exist </b><i>FileName</i>&nbsp;<i>command</i> [<b>else</b>&nbsp;<i>expression</i>]<o:p></o:p></p>
+
+<p>If command extensions are enabled, use the following syntax:<o:p></o:p></p>
+
+<p><b>if</b> [<b>/i</b>] <i>string1</i>&nbsp;<i>CompareOp</i>&nbsp;<i>string2</i>&nbsp;<i>command</i>
+[<b>else</b>&nbsp;<i>expression</i>]<o:p></o:p></p>
+
+<p><b>if</b>&nbsp;<b>cmdextversion</b>&nbsp;<i>number</i>&nbsp;<i>command</i> [<b>else</b>&nbsp;<i>expression</i>]<o:p></o:p></p>
+
+<p><b>if</b>&nbsp;<b>defined</b>&nbsp;<i>variable</i>&nbsp;<i>command</i> [<b>else</b>&nbsp;<i>expression</i>]<o:p></o:p></p>
+
+<p class=MsoNormal><a
+href="http://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/if.mspx#top"><span
+style='text-decoration:none;text-underline:none'><!--[if gte vml 1]><v:shapetype
+ id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+ path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" alt="Top of page"
+ href="http://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/if.mspx#top"
+ style='width:5.25pt;height:6.75pt' o:button="t">
+ <v:imagedata src="ifhelp_files/image001.gif" o:href="http://www.microsoft.com/library/gallery/templates/MNP2.Common/images/arrow_px_up.gif"/>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout'><img
+border=0 width=7 height=9 src="ifhelp_files/image001.gif" alt="Top of page"
+v:shapes="_x0000_i1025"></span><![endif]></span></a><a
+href="http://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/if.mspx#top">Top
+of page</a><o:p></o:p></p>
+
+<h2><a name=E1E></a>Parameters<o:p></o:p></h2>
+
+<p><b>not : </b>Specifies that the command should be carried out only if the
+condition is false. <o:p></o:p></p>
+
+<p><b>errorlevel&nbsp;<i>number</i>&nbsp;: </b>Specifies a true condition only
+if the previous program run by Cmd.exe returned an exit code equal to or
+greater than <i>number</i>. <o:p></o:p></p>
+
+<p><b><i>command</i>&nbsp;: </b>Specifies the command that should be carried
+out if the preceding condition is met. <o:p></o:p></p>
+
+<p><b><i>string1</i>==<i>string2</i>&nbsp;: </b>Specifies a true condition only
+if <i>string1</i> and <i>string2</i> are the same. These values can be literal
+strings or batch variables (for example, <i>%1</i>). You do not need to use
+quotation marks around literal strings. <o:p></o:p></p>
+
+<p><b>exist&nbsp;<i>FileName</i>&nbsp;: </b>Specifies a true condition if <i>FileName</i>
+exists. <o:p></o:p></p>
+
+<p><b><i>CompareOp</i>&nbsp;: </b>Specifies a three-letter comparison operator.
+The following table lists valid values for <i>CompareOp</i>. <o:p></o:p></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='mso-cellspacing:0in;mso-padding-alt:0in 0in 0in 0in' id=EJH>
+ <thead>
+  <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+   <td valign=top style='padding:0in 0in 0in 0in' id=colELH>
+   <p class=MsoNormal>Operator<o:p></o:p></p>
+   </td>
+   <td valign=top style='border:none;border-right:solid #CCCCCC 1.0pt;
+   mso-border-right-alt:solid #CCCCCC .75pt;padding:0in 0in 0in 0in' id=colEOH>
+   <p class=MsoNormal>Description<o:p></o:p></p>
+   </td>
+  </tr>
+ </thead>
+ <tr style='mso-yfti-irow:1'>
+  <td valign=top style='padding:0in 0in 0in 0in'>
+  <p class=lastincell>EQU<o:p></o:p></p>
+  </td>
+  <td valign=top style='border:none;border-right:solid #CCCCCC 1.0pt;
+  mso-border-right-alt:solid #CCCCCC .75pt;padding:0in 0in 0in 0in'>
+  <p class=lastincell>equal to<o:p></o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td valign=top style='padding:0in 0in 0in 0in'>
+  <p class=lastincell>NEQ<o:p></o:p></p>
+  </td>
+  <td valign=top style='border:none;border-right:solid #CCCCCC 1.0pt;
+  mso-border-right-alt:solid #CCCCCC .75pt;padding:0in 0in 0in 0in'>
+  <p class=lastincell>not equal to<o:p></o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td valign=top style='padding:0in 0in 0in 0in'>
+  <p class=lastincell>LSS<o:p></o:p></p>
+  </td>
+  <td valign=top style='border:none;border-right:solid #CCCCCC 1.0pt;
+  mso-border-right-alt:solid #CCCCCC .75pt;padding:0in 0in 0in 0in'>
+  <p class=lastincell>less than<o:p></o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td valign=top style='padding:0in 0in 0in 0in'>
+  <p class=lastincell>LEQ<o:p></o:p></p>
+  </td>
+  <td valign=top style='border:none;border-right:solid #CCCCCC 1.0pt;
+  mso-border-right-alt:solid #CCCCCC .75pt;padding:0in 0in 0in 0in'>
+  <p class=lastincell>less than or equal to<o:p></o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5'>
+  <td valign=top style='padding:0in 0in 0in 0in'>
+  <p class=lastincell>GTR<o:p></o:p></p>
+  </td>
+  <td valign=top style='border:none;border-right:solid #CCCCCC 1.0pt;
+  mso-border-right-alt:solid #CCCCCC .75pt;padding:0in 0in 0in 0in'>
+  <p class=lastincell>greater than<o:p></o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6;mso-yfti-lastrow:yes'>
+  <td valign=top style='padding:0in 0in 0in 0in'>
+  <p class=lastincell>GEQ<o:p></o:p></p>
+  </td>
+  <td valign=top style='border:none;border-right:solid #CCCCCC 1.0pt;
+  mso-border-right-alt:solid #CCCCCC .75pt;padding:0in 0in 0in 0in'>
+  <p class=lastincell>greater than or equal to<o:p></o:p></p>
+  </td>
+ </tr>
+</table>
+
+<p><b>/i&nbsp;: </b>Forces string comparisons to ignore case. You can use <b>/i</b>
+on the <i>string1</i><b>==</b><i>string2</i> form of <b>if</b>. These
+comparisons are generic, in that if both <i>string1</i> and <i>string2</i> are
+both comprised of all numeric digits, the strings are converted to numbers and
+a numeric comparison is performed. <o:p></o:p></p>
+
+<p><b>cmdextversion&nbsp;<i>number</i>&nbsp;: </b>Specifies a true condition
+only if the internal version number associated with the Command Extensions
+feature of Cmd.exe is equal to or greater than <i>number</i>. The first version
+is 1. It is incremented by one when significant enhancements are added to the
+command extensions. The <b>cmdextversion</b> conditional is never true when
+command extensions are disabled (by default, command extensions are enabled). <o:p></o:p></p>
+
+<p><b>defined&nbsp;<i>variable</i>&nbsp;: </b>Specifies a true condition if <i>variable</i>
+is defined. <o:p></o:p></p>
+
+<p><b><i>expression</i>&nbsp;: </b>Specifies a command-line command and any
+parameters to be passed to the command in an <i>else</i> clause. <o:p></o:p></p>
+
+<p><b>/?&nbsp;: </b>Displays help at the command prompt. <o:p></o:p></p>
+
+<p class=MsoNormal><a
+href="http://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/if.mspx#top"><span
+style='text-decoration:none;text-underline:none'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1026" type="#_x0000_t75" alt="Top of page"
+ href="http://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/if.mspx#top"
+ style='width:5.25pt;height:6.75pt' o:button="t">
+ <v:imagedata src="ifhelp_files/image001.gif" o:href="http://www.microsoft.com/library/gallery/templates/MNP2.Common/images/arrow_px_up.gif"/>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout'><img
+border=0 width=7 height=9 src="ifhelp_files/image001.gif" alt="Top of page"
+v:shapes="_x0000_i1026"></span><![endif]></span></a><a
+href="http://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/if.mspx#top">Top
+of page</a><o:p></o:p></p>
+
+<h2><a name=EBDAC></a>Remarks<o:p></o:p></h2>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='mso-cellspacing:0in;mso-padding-alt:0in 0in 0in 0in'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td valign=top style='padding:0in 0in 0in 0in'>
+  <p class=MsoNormal>•<o:p></o:p></p>
+  </td>
+  <td style='padding:0in 0in 0in 0in'>
+  <p>If the condition specified in an <b>if</b> command is true, the command
+  that follows the condition is carried out. If the condition is false, the
+  command in the <b>if</b> clause is ignored, and executes any command in the <b>else</b>
+  clause, if one has been specified. <o:p></o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td valign=top style='padding:0in 0in 0in 0in'>
+  <p class=MsoNormal>•<o:p></o:p></p>
+  </td>
+  <td style='padding:0in 0in 0in 0in'>
+  <p>When a program stops, it returns an exit code. You can use exit codes as
+  conditions by using the <i>errorlevel</i> parameter. <o:p></o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td valign=top style='padding:0in 0in 0in 0in'>
+  <p class=MsoNormal>•<o:p></o:p></p>
+  </td>
+  <td style='padding:0in 0in 0in 0in'>
+  <p>Using <b>defined</b>&nbsp;<i>variable</i>&nbsp;<o:p></o:p></p>
+  <p>If you use <b>defined</b>&nbsp;<i>variable</i>, the following three
+  variables are added: <b>%errorlevel%</b>, <b>%cmdcmdline%</b>, and <b>%cmdextversion%</b>.<o:p></o:p></p>
+  <p><b>%errorlevel%</b> expands into a string representation of the current
+  value of <i>errorlevel</i>, provided that there is not already an environment
+  variable with the name ERRORLEVEL, in which case you get the ERRORLEVEL value
+  instead. The following example illustrates how you can use <b>errorlevel</b>
+  after running a batch program:<o:p></o:p></p>
+  <pre>goto answer%errorlevel%<o:p></o:p></pre><pre>:answer0<o:p></o:p></pre><pre>echo Program had return code 0<o:p></o:p></pre><pre>:answer1<o:p></o:p></pre><pre>echo Program had return code 1<o:p></o:p></pre><pre>goto end<o:p></o:p></pre><pre>:end<o:p></o:p></pre><pre>echo done! <o:p></o:p></pre>
+  <p>You can also use the <i>CompareOp</i> comparison operators as follows:<o:p></o:p></p>
+  <pre>if %errorlevel% LEQ 1 goto okay<o:p></o:p></pre>
+  <p><b>%cmdcmdline%</b> expands into the original command line passed to
+  Cmd.exe prior to any processing by Cmd.exe, provided that there is not
+  already an environment variable with the name <b>cmdcmdline</b>, in which
+  case you get the <b>cmdcmdline</b> value instead.<o:p></o:p></p>
+  <p><b>%cmdextversion%</b> expands into the a string representation of the
+  current value of <b>cmdextversion</b>, provided that there is not already an
+  environment variable with the name CMDEXTVERSION, in which case you get the
+  CMDEXTVERSION value instead.<o:p></o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3;mso-yfti-lastrow:yes'>
+  <td valign=top style='padding:0in 0in 0in 0in'>
+  <p class=MsoNormal>•<o:p></o:p></p>
+  </td>
+  <td style='padding:0in 0in 0in 0in'>
+  <p>Using the <b>else</b> clause <o:p></o:p></p>
+  <p>You must use the <b>else</b> clause on the same line as the command after
+  the <b>if</b>. For example:<o:p></o:p></p>
+  <pre>IF EXIST filename. (<o:p></o:p></pre><pre><st1:State w:st="on"><st1:place
+   w:st="on">del</st1:place></st1:State> filename.<o:p></o:p></pre><pre>) ELSE (<o:p></o:p></pre><pre>echo filename. missing.<o:p></o:p></pre><pre>)<o:p></o:p></pre>
+  <p>The following code does not work because you must terminate the <st1:State
+  w:st="on"><st1:place w:st="on"><b>del</b></st1:place></st1:State> command by
+  a new line:<o:p></o:p></p>
+  <pre>IF EXIST filename. <st1:State w:st="on"><st1:place w:st="on">del</st1:place></st1:State> filename. ELSE echo filename. missing<o:p></o:p></pre>
+  <p>The following code does not work because you must use the <b>else</b>
+  clause on the same line as the end of the <b>if</b> command:<o:p></o:p></p>
+  <pre>IF EXIST filename. <st1:State w:st="on"><st1:place w:st="on">del</st1:place></st1:State> filename.<o:p></o:p></pre><pre>ELSE echo filename. missing<o:p></o:p></pre>
+  <p>If you want to format it all on a single line, use the following form of
+  the original statement:<o:p></o:p></p>
+  <pre>IF EXIST filename. (<st1:State w:st="on"><st1:place w:st="on">del</st1:place></st1:State> filename.) ELSE echo filename. missing<o:p></o:p></pre></td>
+ </tr>
+</table>
+
+<p class=MsoNormal><a
+href="http://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/if.mspx#top"><span
+style='text-decoration:none;text-underline:none'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1027" type="#_x0000_t75" alt="Top of page"
+ href="http://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/if.mspx#top"
+ style='width:5.25pt;height:6.75pt' o:button="t">
+ <v:imagedata src="ifhelp_files/image001.gif" o:href="http://www.microsoft.com/library/gallery/templates/MNP2.Common/images/arrow_px_up.gif"/>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout'><img
+border=0 width=7 height=9 src="ifhelp_files/image001.gif" alt="Top of page"
+v:shapes="_x0000_i1027"></span><![endif]></span></a><a
+href="http://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/if.mspx#top">Top
+of page</a><o:p></o:p></p>
+
+<h2><a name=ETGAC></a>Examples<o:p></o:p></h2>
+
+<p>If the file Product.dat cannot be found, the following message appears: <o:p></o:p></p>
+
+<p>if not exist product.dat echo Can't find data file <o:p></o:p></p>
+
+<p>If an error occurs during the formatting of the disk in drive A, the
+following example displays an error message: <o:p></o:p></p>
+
+<pre>:begin<o:p></o:p></pre><pre>@echo off<o:p></o:p></pre><pre>format a: /s<o:p></o:p></pre><pre>if not errorlevel 1 goto end<o:p></o:p></pre><pre>echo An error occurred during formatting.<o:p></o:p></pre><pre>:end<o:p></o:p></pre><pre>echo End of batch program.<o:p></o:p></pre>
+
+<p>If no error occurs, the error message does not appear.<o:p></o:p></p>
+
+<p>You cannot use the <b>if</b> command to test directly for a directory, but
+the null (NUL) device does exist in every directory. As a result, you can test
+for the null device to determine whether a directory exists. The following
+example tests for the existence of a directory:<o:p></o:p></p>
+
+<p>if exist c:\mydir\nul goto process<o:p></o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>

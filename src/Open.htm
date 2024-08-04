@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+	<head>
+		<title>Load previously created batch file</title>
+		<meta name="GENERATOR" content="Microsoft Visual Studio .NET 7.1">
+		<meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5">
+		<script id="clientEventHandlersJS" language="javascript">
+
+
+		function Submit1_onclick() {
+			if (filename.value.substr(filename.value.length - 4,4)==".bat"){
+				window.returnValue = filename.value;
+				window.close();
+			}else{
+				stats.innerText="Please choose a file created by a compatible version of SuperCopy.";
+			}
+		}
+		function page_load(){
+			filename.value = window.dialogArguments;
+			if (filename.value == "") filename.value = "*.bat";
+			window.returnValue = "";
+		}
+
+		</script>
+	</head>
+	<body onload="return page_load()">
+		<P>Select a batch file to open:</P>
+		<P>
+			<TABLE id="Table1" style="WIDTH: 496px; HEIGHT: 61px" cellSpacing="1" cellPadding="1" width="496"
+				border="1">
+				<TR>
+					<TD>
+						<INPUT id="filename" type="file" name="File1" style="WIDTH: 496px; HEIGHT: 22px" size="63"></TD>
+				</TR>
+				<TR>
+					<TD>
+						<P align="right"><INPUT id="Submit1" type="submit" value="Submit" name="Submit1" language="javascript" onclick="return Submit1_onclick()"></P>
+					</TD>
+				</TR>
+			</TABLE>
+		</P>
+		<DIV id="stats" ms_positioning="FlowLayout"></DIV>
+	</body>
+</html>

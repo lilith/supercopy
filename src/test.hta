@@ -1,0 +1,69 @@
+<HTML>
+<HEAD>
+<TITLE>Start Page</TITLE>
+
+<OBJECT ID="oShell"
+    CLASSID="clsid:13709620-C279-11CE-A49E-444553540000">
+</OBJECT>
+
+<STYLE>
+    INPUT {width: 200} 
+</STYLE>  
+
+<SCRIPT LANGUAGE="VBScript">
+<!--
+  function fnStart(sMethod)
+    select case sMethod
+      case 0    
+          'Minimizes all windows on the desktop
+        oShell.MinimizeAll
+      case 1  
+          'Displays the Run dialog box
+        oShell.FileRun
+      case 2  
+          'Displays the Shut Down Windows dialog box
+        oShell.ShutdownWindows
+      case 3  
+          'Displays the Find dialog box
+        oShell.FindFiles
+      case 4  
+          'Displays the Date/Time dialog box
+        oShell.SetTime 
+      case 5  
+          'Displays the Internet Properties dialog box
+        oShell.ControlPanelItem "INETCPL.cpl"
+      case 6  
+          'Explores the My Documents folder
+        oShell.Explore "C:\My Documents"
+      case 7  
+          'Enables user to select folder from Program Files
+        oShell.BrowseForFolder 0, "My Programs", 0, "C:\Program Files" 
+      case 8  
+          'Opens the Favorites folder
+        oShell.Open "C:\WINDOWS\Favorites"
+      case 9  
+          'Displays the Taskbar Properties dialog box
+        oShell.TrayProperties
+    end select  
+  end function      
+-->
+</SCRIPT>
+
+</HEAD>
+
+<BODY>
+
+<H1>Start...</H1>
+<INPUT type="button" value="Edit Taskbar Properties" onclick="fnStart(9)"><br>
+<INPUT type="button" value="Open Favorites Folder" onclick="fnStart(8)"><br>
+<INPUT type="button" value="Browse Program Files" onclick="fnStart(7)"><br>
+<INPUT type="button" value="Explore My Documents" onclick="fnStart(6)"><br>
+<INPUT type="button" value="Modify Internet Properties" onclick="fnStart(5)"><br>
+<INPUT type="button" value="Set System Time" onclick="fnStart(4)"><br>
+<INPUT type="button" value="Find a File or Folder" onclick="fnStart(3)"><br>
+<INPUT type="button" value="Shut Down Windows" onclick="fnStart(2)"><br>
+<INPUT type="button" value="Run" onclick="fnStart(1)">     
+<INPUT type="button" value="Minimize All Windows" onclick="fnStart(0)">     
+</BODY>
+</HTML>
+
