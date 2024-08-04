@@ -1,7 +1,7 @@
 # Super Copy (RIP, 2004-2007)
  [deprecated] Better UI for Windows Server 2003 copy, with simulation and retry
 
-## Super Copy provides a very robust way to copy files in Windows. Super Copy does not prompt you for more information once the copy has started; all options are specified beforehand. This is simply a lightweight interface for XCOPY, and will not negatively affect your system's performance. Read about why I wrote SuperCopy.
+Super Copy provides a very robust way to copy files in Windows. Super Copy does not prompt you for more information once the copy has started; all options are specified beforehand. This is simply a lightweight interface for XCOPY, and will not negatively affect your system's performance. Read about why I wrote SuperCopy.
 
 ### Features
 "Calculate Results" mode allows you to see what files will be affected.
